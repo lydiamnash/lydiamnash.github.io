@@ -1,0 +1,40 @@
+body {
+	font-family:open-sans,arial,sans-serif;
+}
+
+header {
+	padding:0 5%;
+	margin-bottom:50px;
+	background-color:;
+}
+
+nav {
+	float:right;
+}
+
+.nugget {
+	width:20%;
+	margin:0 5%;
+	display:inline-block;
+}
+
+.nugget img {
+	width:90%;
+}
+
+#footer-nav {
+	padding:0 5%;
+}
+
+.connect-icon {
+	width: 30px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+#footer-banner {
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
