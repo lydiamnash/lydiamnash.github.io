@@ -43,7 +43,11 @@ footer {
 }
 
 .blog-teaser {
-	padding:0 5%;
+	padding:5%;
+}
+
+.blog-teaser h1 {
+	margin-top:0;
 }
 
 .blog-img {
