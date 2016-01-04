@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<link href="#href" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+		<title>Blog Title</title>
+	</head>
+	<body>
+		<header>
+			<nav> 
+				<a href="index.html">Home</a>
+				<a href="#">About</a>
+	    		<a href="#">Projects</a>
+	    		<a href="blog/index.html">Blog</a>
+	  			<a href="#">Contact</a>
+			</nav>
+		</header>
+			<section>
+				<h1>Arrays and Hashes</h1>
+				<p>January 4, 2015</p>
+				</hr>
+				<p>Arrays and hashes used to store a group, or "collection," of objects that can be accessed in a program. Hashes and arrays can vary in size and the type of objects they hold: integers, floats, or string variables.</p>
+				<p>One of the main differences between arrays and hashes is that in order to retrieve the information in an array, you need to know the exact order of the content in the array since you use the number that represents the ordered location of data to retrieve objects. That is, if you have an array with 3 items, 'peach', 'orange', and 'apple', entered in that order, you would need to know that apple is the third object and tell Ruby to pull the third object. So, for arrays, the number that represents the object's order is the "key" for accessing the information. On the other hand, hashes do not use ordered numbers for accessing information. Hashes include sets of information, such as 'peach' & 'Georgia'; 'orange' & 'Florida'; and 'apple' & 'Washington'. If the fruits listed here are defined as the "keys" then they are what is used to access the associated data.</p>
+				<p>Defining an array:</p>
+				<code>fruit_array = ['peach', 'orange', 'apple']
+				</code>
+				<p>Defining a hash:</p>
+				<code>
+					fruit_array = {
+						'peach'	=>	'Georgia', 
+						'orange'=>	'Florida',
+						'apple'	=>	'Washington'
+					}
+				</code>
+				<p>In the case above, it may make more sense to use the hash when you need to retrieve more nuanced data or the number of items in an array is changing/uncertain and a unique key ensures retrieving the corrent information.</p>
+			</section>
+	</body>
+	<footer>
+
+	</footer>
+</html>
