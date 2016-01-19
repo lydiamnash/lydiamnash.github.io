@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		<link href="#href" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+		<title>Using Ruby Classes</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav> 
+				<a href="index.html">Home</a>
+				<a href="../about.html">About</a>
+	    		<a href="#">Projects</a>
+	    		<a href="index.html">Blog</a>
+			</nav>
+		</header>
+		
+		<section>
+			<h1>Using Ruby classes</h1>
+			<p>1/18/2016</p>
+			</hr>
+			<p>This week, we learned about classes in Ruby. Ruby is an object-oriented programming language, which means that the language is organized around the actual pieces of data. Examples of data are: the integer 5, the word hamburger, a 1969 Ford Mustang, anything! Each piece of data falls into a category, or type, of data called classes. Depending on what class the data is, certain actions can done to it. For example, 5 is a number and thus is part of the Integer class. Data that are part of the Integer class, meaning they have built in functions like addition, subtraction, division, and multiplication. The word hamburger, on the other hand, is a String. Hashes and Arrays are other examples of classes.</p>
+
+			<p>In today's post, we will use Ruby's functionality to create a custom class. Let's say we want to organize data about vehicles. All cars have specific information about them, such as model, make, and year assembled. Let's call the class "Vehicle":
+			</p>
+			<code>
+				class Vehicle<br>
+				end
+			</code>
+			<p>Let's say we want to create a new object (a piece of data) called my_car that is a vehicle. My car is a 2003 Honda CRV. The first thing we do is initialize the new object by creating an "initialize" method like so:
+			</p>
+			<code>
+				class Vehicle<br>
+					def initialize(make,model,year)<br>
+						@make = make<br>
+						@model = model<br>
+						@year = year<br>
+					end<br>
+				end
+			</code>
+			<p>In this example, we take the three arguments and set them equal to 3 instance variables. Instance variables are different than local variables because they can be passed between methods. They are denoted by putting an "@" in front of the variable name. The method initialize is an example of an instance method. These methods can be called on data that has the class of Vehicle.  
+			</p>
+			<p>There are other types of methods called Class Methods. Class methods are methods that can be called on the class, not the object itself.
+			</p>
+		</section>
+	</body>
+	
+	<footer>
+	</footer>
+</html>
