@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<link href="../stylesheets/style.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>Lydia Nash - Projects</title>
+	</head>
+	<body>
+	    <header>
+	    	<nav>
+				<a href="../index.html">Home</a>
+				<a href="../about.html">About</a>
+	    		<a href="index.html">Projects</a>
+	    		<a href="../blog/index.html">Blog</a>
+  			</nav>
+  			<h1>SQL Cheat Sheet</h1>
+		</header>
+
+		<section>
+			<h2>Creating, Deleting, and Modifying tables</h2>
+			<h4>Create a Table</h4>
+				<code>CREATE [table_name] ([column1_name] [column1_data_type],[column2_name] [column2_data_type],...)</code>
+			<h4>Delete a Table</h4>
+				<code>DROP TABLE [table_name]</code>
+			<h4>Modify a Table (Add or delete column)</h4>
+				<code>ALTER TABLE [table_name] ADD [column__name] [column_data_type] 
+				ALTER TABLE [table_name] DROP [column__name] [column_data_type] </code>
+			<h2>Selecting Information in a SQL Database</h2>
+			<h4>Select Specified Column(s)</h4>
+				<code>SELECT [column_name(s)] FROM [table_name]</code>
+			<h4>Select All Columns</h4>
+				<code>SELECT * FROM [table_name]</code>
+			<h4>Select Information If Conditions/Criteria Are Met</h4>
+				<code>SELECT [desired_columns] FROM [table_name] 
+					WHERE [condition]</code>
+			<h2>Joining Tables of Information</h2>
+				<code>SELECT [column1_name], [column2_name] 
+					FROM [table1_name] 
+					INNER JOIN [table2_name] 
+					ON [table1_name].[keyfield1] = [table2_name].[foreign_keyfield]</code>
+
+
+		</section>
+
+		<footer>
+			<nav id="footer-nav">
+				<a href="https://twitter.com/lydia_nash" target="_blank"><img src="../imgs/twitter-icon.png" class="connect-icon" alt="Twitter icon"></a>
+				<a href="https://instagram.com/lydia_nash/" target="_blank"><img src="../imgs/instagram-icon.png" class="connect-icon" alt="Instagram icon"></a>
+				<a href="https://www.linkedin.com/in/lydiamnash" target="_blank"><img src="../imgs/linkedin-icon.png" class="connect-icon" alt="Linkedin icon"></a>
+				<a href="https://github.com/lydiamnash" target="_blank"><img src="../imgs/github-icon.png" class="connect-icon" alt="Github icon"></a>
+			</nav>
+
+		</footer>
+	</body>
+</html>

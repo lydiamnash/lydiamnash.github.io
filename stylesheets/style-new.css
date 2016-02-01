@@ -1,0 +1,169 @@
+/**************
+SITEWIDE STYLING
+**************/
+body {
+	font-family:open-sans,arial,sans-serif;
+	margin:0px;
+	background-color:#f5f5f5;
+}
+
+header {
+	padding:10px 0px 6px;
+	background-color:#44B78B;
+	border-bottom:1	px solid #d3d3d3;	
+}
+
+.container {
+	padding: 0 30px;
+	display:block;
+	overflow:hidden;
+}
+
+#logo {
+	color:white;
+	display:inline-block;
+	float:left;
+	margin-bottom:15px;
+}
+
+#tag-line {
+	float:left;
+	display:inline-block;
+	width:200px;
+	font-size:12px;
+	margin:4px 0px 0px 20px;
+	color:#C9F0DD;
+	font-weight:100;
+}
+
+section {
+	padding-left:10px;
+	margin-top:50px;
+	clear:both;
+}
+
+nav {
+	float:right;
+	margin-top:10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 0px 15px;
+	outline: none;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #C9F0DD;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.nugget {
+	width:20%;
+	margin:0 5%;
+	display:inline-block;
+}
+
+.nugget img {
+	width:90%;
+}
+
+.nugget img:hover {
+	opacity:.8;
+	border-radius:5px;
+}
+
+/*Footer***************************/
+footer {
+	clear:both;
+	background-color:#303840;
+	width:100%;
+}
+
+#footer-container {
+	padding: 0 30px;
+	display:block;
+	overflow:hidden;
+}
+
+#footer-nav {
+	padding:0 15px 0px 0px;
+}
+
+.connect-icon {
+	width: 20px;
+	/*margin-left:10px;*/
+	margin-bottom:10px;
+}
+
+
+section p {
+	margin:0 5%;
+}
+
+#about-me-pic {
+	width:150px;
+	margin:0 5%;
+	float:left;
+}
+
+
+/*Blog Styling ************************/
+.blog-teaser {
+	padding:5%;
+}
+
+.blog-teaser h1 {
+	margin-top:0;
+}
+
+.blog-img {
+	width:100px;
+	float:left;
+	margin-right:20px;
+}
+
+.blog-section-link {
+	text-decoration:none;
+	color:black;
+}
+
+.blog-section-link:hover {
+	text-decoration:underline;
+	color:green;
+}
